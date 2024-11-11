@@ -41,6 +41,7 @@ public class ColumnDestroy : MonoBehaviour
             }
 
             Destroy(GetComponent<Collider>());
+            Destroy(other.gameObject.GetComponent<MoveObject>());
         }
     }
 }
